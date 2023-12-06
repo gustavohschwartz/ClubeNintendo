@@ -1,0 +1,55 @@
+body {
+  background-color: #F8F9FA;
+}
+
+.store-bg-navbar {
+  background-color: #E60012;  
+}
+
+.store-btn-primary {
+  background-color: #E60012;
+  border-color: #E60012;
+}
+
+.store-btn-primary:hover,
+.store-btn-primary:focus-visible {
+  background-color: #E60012 !important;
+  border-color: #E60012 !important;
+}
+
+.store-btn-outline {
+  border-color: #E60012;
+  color: #E60012;
+}
+
+.store-btn-outline:hover,
+.store-btn-outline:focus-visible {
+  background-color: #E60012 !important;
+  border-color: #E60012 !important;
+}
+
+.store-card {
+  margin-bottom: 24px;
+}
+
+.img-preview {
+  width: fit-content;
+  height: 200px;  
+}
+
+.carrinho {
+  min-width: 24rem;
+  max-width: 24rem;
+}
+
+.store-search {
+  width: 40%;
+}
+
+.img-carrinho {
+  height: 96px;
+}
+
+#store-modal .modal-dialog {
+  max-width: 960px;
+}
