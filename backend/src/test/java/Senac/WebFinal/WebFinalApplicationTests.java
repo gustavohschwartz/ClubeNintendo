@@ -1,4 +1,4 @@
-package Senac.aula01;
+package Senac.WebFinal;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

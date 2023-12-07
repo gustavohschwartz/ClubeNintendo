@@ -53,3 +53,17 @@ body {
 #store-modal .modal-dialog {
   max-width: 960px;
 }
+
+.store-link {
+  color: #212529;
+  text-decoration: none;
+}
+
+
+.store-link:hover {
+  color: #E60012;
+}
+
+.img-store {
+  height: 300px;
+}

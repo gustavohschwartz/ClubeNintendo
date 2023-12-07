@@ -1,12 +1,12 @@
 <script setup>
-import { ref } from "vue";
+import { ref } from "vue"
 
-const valorPesquisa = ref("");
+const valorPesquisa = ref("")
 
-defineProps(["ehVitrine"]);
+defineProps(["ehVitrine"])
 
-const emit = defineEmits(["pesquisarJogo"]);
-const pesquisarJogo = (valorPesquisa) => { emit("pesquisarJogo", valorPesquisa); };
+const emit = defineEmits(["pesquisarJogo"])
+const pesquisarJogo = (valorPesquisa) => { emit("pesquisarJogo", valorPesquisa); }
 </script>
 
 <template>
@@ -45,7 +45,12 @@ const pesquisarJogo = (valorPesquisa) => { emit("pesquisarJogo", valorPesquisa);
         </div>
       </form>
 
-      <button class="btn btn-outline-light" type="submit">Conta</button>
+      <router-link
+        to="/pedidos"
+        class="btn btn-outline-light"
+      >
+        Meus pedidos
+      </router-link>
     </div>
   </nav>
 </template>

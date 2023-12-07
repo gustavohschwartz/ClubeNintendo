@@ -8,7 +8,7 @@ defineProps(["dadosCliente"]);
   <div class="cadastro flex-grow-1">
     <div class="card">
       <div class="card-body">
-        <h5>Dados pessoais</h5>
+        <h5>Destinatário</h5>
         <div class="row">
           <div class="col">
             <div class="form-group">
@@ -76,8 +76,8 @@ defineProps(["dadosCliente"]);
                 type="text"
                 class="form-control"
                 id="inputNumero"
-                v-model="dadosCliente.rua"
-                @input="$emit('update:dadosCliente.rua', $event.target.value)"
+                v-model="dadosCliente.numero"
+                @input="$emit('update:dadosCliente.numero', $event.target.value)"
               />
             </div>
           </div>
@@ -146,9 +146,9 @@ defineProps(["dadosCliente"]);
             type="radio"
             name="radioPagamento"
             id="radioPIX"
-            value="pix"
-            v-model="dadosCliente.pagamento"
-            @input="$emit('update:dadosCliente.pagamento', $event.target.value)"
+            value="PIX"
+            v-model="dadosCliente.formaPagamento"
+            @input="$emit('update:dadosCliente.formaPagamento', $event.target.value)"
             checked
           />
           <label class="form-check-label" for="radioPIX"> PIX </label>
@@ -159,9 +159,9 @@ defineProps(["dadosCliente"]);
             type="radio"
             name="radioPagamento"
             id="radioBoleto"
-            value="boleto"
-            v-model="dadosCliente.pagamento"
-            @input="$emit('update:dadosCliente.pagamento', $event.target.value)"
+            value="Boleto"
+            v-model="dadosCliente.formaPagamento"
+            @input="$emit('update:dadosCliente.formaPagamento', $event.target.value)"
           />
           <label class="form-check-label" for="radioBoleto"> Boleto </label>
         </div>

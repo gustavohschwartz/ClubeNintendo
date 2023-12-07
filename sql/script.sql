@@ -3,7 +3,7 @@ INSERT INTO `web`.`imagens` (`id`, `alt`, `url`) VALUES ('2', 'The Legend Of Zel
 INSERT INTO `web`.`imagens` (`id`, `alt`, `url`) VALUES ('3', 'Mario Party Superstars Mídia Física', 'src/assets/img-mario-party.png');
 INSERT INTO `web`.`imagens` (`id`, `alt`, `url`) VALUES ('4', 'Donkey Kong Country Tropical Freeze Mídia Física', 'src/assets/img-donkey-kong.png');
 INSERT INTO `web`.`imagens` (`id`, `alt`, `url`) VALUES ('5', 'The Legend Of Zelda Tears of Kingdom Mídia Física', 'src/assets/img-zelda-tears.png');
-INSERT INTO `web`.`imagens` (`id`, `alt`, `url`) VALUES ('6', 'Mario Kart Deluxe Mídia Física', 'src/assets/img-mario-kart.png');
+INSERT INTO `web`.`imagens` (`id`, `alt`, `url`) VALUES ('6', 'Mario Kart 8 Deluxe Mídia Física', 'src/assets/img-mario-kart.png');
 INSERT INTO `web`.`imagens` (`id`, `alt`, `url`) VALUES ('7', 'Super Mario 3D World Mídia Física', 'src/assets/img-mario-3d.png');
 INSERT INTO `web`.`imagens` (`id`, `alt`, `url`) VALUES ('8', 'Super Smash Bros. Ultimate Mídia Física', 'src/assets/img-smash-bros.png');
 

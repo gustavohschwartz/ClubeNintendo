@@ -16,7 +16,11 @@ const comprar = (jogo) => {
       alt="..."
     />
     <div class="card-body">
-      <p class="card-text">{{ jogo.titulo }}</p>
+      <p class="card-text">
+        <router-link :to="'/produto/' + jogo.id" class="store-link">
+          {{ jogo.titulo }}
+        </router-link>
+      </p>
       <h4 class="card-title">
         R$ {{ jogo.preco.toFixed(2).replace(".", ",") }}
       </h4>
