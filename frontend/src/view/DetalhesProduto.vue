@@ -1,13 +1,17 @@
 <script setup>
-import { ref } from "vue";
+import { ref, defineProps } from 'vue';
 import axios from "axios";
 
 import Navbar from "./../components/Navbar.vue"
 
 const produto = ref({});
 
+const props = defineProps({
+    id: String
+})
+
 const buscarProduto = () => {
-  axios.get("http://localhost:8090/produtos/id?id="+1).then((response) => {
+  axios.get("http://localhost:8090/produtos/id?id=" + props.id).then((response) => {
     produto.value = response.data;
   });
 };
@@ -24,7 +28,7 @@ buscarProduto();
         <div class="d-flex">
           <div class="p-5">
             <img
-              src="./../assets/img-mario-wonder.png"
+              :src="produto.imagem.url"
               class="img-store"
               alt="..."
             />
