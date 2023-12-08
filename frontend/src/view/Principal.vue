@@ -14,6 +14,7 @@ const jogosVitrine = ref([]) // Inicializa array de jogos da vitrine
 const jogosCarrinho = ref([]) // Inicializa array de jogos do carrinho
 const jogoPesquisado = ref('') // Inicializa const auxiliar da pesquisa 
 const dadosCliente = ref(DadosCliente) // Inicializa dados do cliente
+const modalPedidoFinalizado = ref(null)
 
 const jogosFiltrados = computed(() => {
   if (jogoPesquisado.value === '')
@@ -89,7 +90,7 @@ const finalizarCompra = () => {
 
     axios.post("http://localhost:8090/pedidos?" + dados)
       .then(() => {
-        alert('Pedido finalizado com sucesso')
+        modalPedidoFinalizado.value.abrirModal()
         limparCarrinho()
       })
   }
@@ -110,7 +111,9 @@ buscarJogosVitrine();
   <navbar @pesquisarJogo="pesquisarJogo" :eh-vitrine="ehVitrine" />
 
   <div class="container-fluid d-flex p-4">
-    <pedido-finalizado />
+    <pedido-finalizado
+      ref="modalPedidoFinalizado"
+    />
 
     <vitrine 
       v-if="ehVitrine"
